@@ -1,0 +1,83 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.brand-title {
+  font-family: var(--font-title);
+  font-size: clamp(5rem, 14vw, 12rem);
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  line-height: 0.85;
+  opacity: 0;
+  animation: brandIn 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.5s;
+  text-shadow: 0 0 80px rgba(212, 175, 55, 0.3), 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.brand-sub {
+  font-family: var(--font-title);
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  letter-spacing: 0.8em;
+  color: var(--white);
+  opacity: 0;
+  animation: brandIn 2s ease forwards;
+  animation-delay: 1s;
+}
+
+.brand-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  animation: lineGrow 2s ease forwards;
+  animation-delay: 1.5s;
+}
+
+.brand-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.6);
+  opacity: 0;
+  animation: brandIn 2s ease forwards;
+  animation-delay: 2s;
+}
+
+.brand-cta {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--gold-dim);
+  opacity: 0;
+  animation: brandIn 2s ease forwards, pulse 2.5s ease-in-out infinite;
+  animation-delay: 3s, 5s;
+}
+
+@keyframes brandIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes lineGrow {
+  from { width: 0; opacity: 0; }
+  to { width: 120px; opacity: 1; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
