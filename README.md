@@ -49,3 +49,14 @@ Debes levantar un servidor local. Las formas más sencillas son:
 
 ## Créditos
 Los modelos 3D deben ser provistos por el usuario (recomendado modelos optimizados en Sketchfab u otros orígenes).
+
+
+
+<img width="1057" height="622" alt="image" src="https://github.com/user-attachments/assets/dcb5406f-5f0e-4051-bb4d-b0d7095cafd7" />
+
+<img width="1789" height="766" alt="image" src="https://github.com/user-attachments/assets/0fdac485-52fa-42d3-8048-26fb99fc1949" />
+
+<img width="1616" height="554" alt="image" src="https://github.com/user-attachments/assets/1b15530c-7d55-4d37-ac7b-603c91cc45ea" />
+
+
+
